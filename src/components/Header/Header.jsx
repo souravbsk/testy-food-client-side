@@ -4,7 +4,7 @@ import Hamburger from 'hamburger-react'
 const Header = () => {
     const [isOpen,setOpen] = useState(false)
     return (
-        <div className='backdrop-blur-md absolute right-0 left-0 top-0 border-b-2'>
+        <div className='bg-black absolute right-0 left-0 top-0 border-b-2'>
             <nav className=' container flex flex-col md:flex-row py-4 md:py-6 md:items-center justify-between'>
                 <div className='flex items-center justify-between'>
                     <Link><h2 className='text-2xl md:text-4xl font-bold text-white font-serif'>Testy Food</h2></Link>

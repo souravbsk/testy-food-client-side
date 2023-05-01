@@ -2,7 +2,6 @@
 import React from 'react';
 
 const Category = ({category}) => {
-    console.log(category);
     const {img,categoryTitle,id} = category
     return (
         <div className='my-12 py-4 shadow-md border-2 rounded-md'>
