@@ -1,0 +1,50 @@
+[
+  {
+    "chefImage": "https://i.ibb.co/HdvwVX4/febrian-zakaria-Si-Qgni-cq-Fg-unsplash.jpg",
+    "chefName": "John Smith",
+    "yearsOfExperience": 10,
+    "likeNumber": 1000,
+    "id": 1,
+    "chefId": "chef123"
+  },
+  {
+    "chefImage": "https://i.ibb.co/2tyswpH/jeff-siepman-z-Ixd-GQ7l-PU-unsplash.jpg",
+    "chefName": "Sarah Johnson",
+    "yearsOfExperience": 5,
+    "likeNumber": 500,
+    "id": 2,
+    "chefId": "chef456"
+  },
+  {
+    "chefImage": "https://i.ibb.co/9nRb9zT/rc-cf-FMh5o5m5-N9-E-unsplash.jpg",
+    "chefName": "Michael Lee",
+    "yearsOfExperience": 8,
+    "likeNumber": 800,
+    "id": 3,
+    "chefId": "chef789"
+  },
+  {
+    "chefImage": "https://i.ibb.co/P4c2m9y/bluebird-provisions-l-RAWc-T7uwh-Y-unsplash.jpg",
+    "chefName": "Emily Davis",
+    "yearsOfExperience": 6,
+    "likeNumber": 600,
+    "id": 4,
+    "chefId": "chef012"
+  },
+  {
+    "chefImage": "https://i.ibb.co/FwWYZ8y/ronan-kruithof-llc-X9p-Tjh-XM-unsplash.jpg",
+    "chefName": "Daniel Kim",
+    "yearsOfExperience": 12,
+    "likeNumber": 1200,
+    "id": 5,
+    "chefId": "chef345"
+  },
+  {
+    "chefImage": "https://i.ibb.co/44ZRv1H/petr-sevcovic-e5-Q5v-WO55u-U-unsplash.jpg",
+    "chefName": "Jessica Brown",
+    "yearsOfExperience": 2,
+    "likeNumber": 200,
+    "id": 6,
+    "chefId": "chef678"
+  }
+]

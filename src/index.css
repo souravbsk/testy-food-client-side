@@ -8,3 +8,8 @@
 .active{
     @apply text-orange-500
 }
+
+
+.banner-img{
+    background-image: url("https://i.ibb.co/5T7B9nF/foodhub-slider-main-food-v4.jpg");
+}
