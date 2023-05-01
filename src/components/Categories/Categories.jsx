@@ -16,7 +16,7 @@ const Categories = () => {
   return (
     <div className="container mt-12 md:mt-20">
       <div className="text-center">
-        <h2 className="text-gray-900 text-2xl md:text-5xl font-bold ">
+        <h2 className="text-gray-900 text-2xl md:text-4xl font-bold ">
           Recipe Categories
         </h2>
       </div>
