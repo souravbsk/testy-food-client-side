@@ -1,0 +1,33 @@
+[
+    {
+      "img": "https://i.ibb.co/f2cGfg1/henrik-hjortshoj-Xt-YPj-MTNQUA-unsplash.jpg",
+      "categoryTitle": "Desserts",
+      "id": 1
+    },
+    {
+      "img": "https://i.ibb.co/tL86s2H/ella-olsson-6-Ux-D0-Nz-Dyw-I-unsplash.jpg",
+      "categoryTitle": "Vegetarian",
+      "id": 2
+    },
+    {
+      "img": "https://i.ibb.co/XbtCKNb/ca-creative-bp-PTl-XWTOvg-unsplash.jpg",
+      "categoryTitle": "Seafood",
+      "id": 3
+    },
+    {
+      "img": "https://i.ibb.co/vZMDcZF/towfiqu-barbhuiya-9-J9uxuo-IM9-A-unsplash.jpg",
+      "categoryTitle": "Meat",
+      "id": 4
+    },
+    {
+      "img": "https://i.ibb.co/f2fSrJ9/julia-kicova-r-Ixo-Nvlcg0o-unsplash.jpg",
+      "categoryTitle": "Pasta",
+      "id": 5
+    },
+    {
+      "img": "https://i.ibb.co/nCgY3Xb/divani-s0du-M7x1yu-A-unsplash.jpg",
+      "categoryTitle": "Soup",
+      "id": 6
+    }
+  ]
+  
