@@ -1,3 +1,5 @@
+# Testy Food
+
 ## Features
 
 - Login and Register Functionality Added With Firebase 
@@ -16,6 +18,8 @@
 - If You are Log in you Image, Log out Button Show on To Navbar.
 - You Can Also Sign In Google, And GitHub
 - Go To Blog Route to Show Some Important Question Answer
+- lazy loader added on chef card and recipe card 
+- pdf file downloader add on blog section .. you can download blogs as a pdf file 
  
 ## [Live link](https://testy-food-56d46.web.app/)
 Live link: [https://testy-food-56d46.web.app/](https://testy-food-56d46.web.app/)

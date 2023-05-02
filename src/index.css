@@ -24,3 +24,12 @@
 .swiper-button-next, .swiper-button-prev{
     @apply bg-orange-400 w-4
 }
+
+.LazyLoad {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+  }
+  
+  .is-visible {
+    opacity: 1;
+  }

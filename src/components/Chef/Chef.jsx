@@ -2,10 +2,12 @@
 import React from 'react';
 import {AiFillLike} from "react-icons/ai"
 import { Link } from 'react-router-dom';
+import LazyLoad from 'react-lazy-load';
 
 const Chef = ({chef}) => {
     const {chefImage,chefName,chefId,likeNumber,yearsOfExperience,recipesNumber} = chef;
     return (
+      <LazyLoad offset={300}>
         <div className="card overflow-hidden shadow-md glass">
         <img className='h-56 object-top w-full object-fill' src={chefImage} alt={chefName}/>
         <div className="p-5 space-y-1">
@@ -20,6 +22,7 @@ const Chef = ({chef}) => {
           </div>
         </div>
       </div>
+      </LazyLoad>
     );
 };
 
