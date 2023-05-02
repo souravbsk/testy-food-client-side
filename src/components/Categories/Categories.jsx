@@ -29,7 +29,8 @@ const Categories = () => {
             disableOnInteraction: false,
           }}
            modules={[Navigation,Pagination]}
-           
+           navigation
+           centeredSlides={true}
            loop={true}
            pagination={{
             clickable: true,
