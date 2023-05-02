@@ -50,10 +50,10 @@ const ChefDetails = () => {
         </div>
       </div>
       <div className="my-5">
-        <h3 className="text-3xl mt-12 font-thin text-orange-600 font-mono">
+        <h3 className="text-3xl text-center mt-12 font-thin text-orange-600 font-mono">
           Recipe Length: {recipesNumber}
         </h3>
-        <div className="grid grid-cols-3 gap-8 mt-8">
+        <div className="grid md:grid-cols-3 gap-8 mt-8">
             {recipes?.map(recipe => <Recipe key={recipe?.recipeId} recipe={recipe}></Recipe>)}
             </div>
       </div>
