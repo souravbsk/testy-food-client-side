@@ -4,6 +4,8 @@ import Home from "../components/Home/Home";
 import Login from "../components/Login/Login";
 import Register from "../components/Register/Register";
 import ChefDetails from "../components/ChefDetails/ChefDetails";
+import Loading from "../components/Loading/Loading";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/chefrecipe/:chefId",
-        element:<ChefDetails></ChefDetails>,
+        element:<PrivateRoute><ChefDetails></ChefDetails></PrivateRoute>,
         loader:({params}) => fetch(`https://test-food-server-souravbsk.vercel.app/chefrecipe/${params?.chefId}`)
       },
       {
@@ -27,6 +29,10 @@ const router = createBrowserRouter([
       {
         path:"/register",
         element:<Register></Register>
+      },
+      {
+        path:"/loading",
+        element:<Loading></Loading>
       }
     ]
   },

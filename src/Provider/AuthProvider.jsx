@@ -78,7 +78,8 @@ const GithubSignIn = () => {
         updateUserNamePhoto,
         logOutUser,
         GoogleSignIn,
-        GithubSignIn
+        GithubSignIn,
+        loader
     }
     return (
         <AuthContext.Provider value={authInfo}>

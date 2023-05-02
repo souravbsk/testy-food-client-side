@@ -16,20 +16,20 @@ const handleFavorite = () => {
 }
 
   return (
-    <div className="card bg-base-100 shadow-xl">
-      <figure className="px-10 pt-10">
+    <div className="card border bg-base-100 shadow-xl">
+      <figure className="px-10 pt-5 md:pt-10">
         <img
           src={image}
           alt="Shoes"
-          className="rounded-full shadow-2xl border"
+          className="rounded-full border"
         />
       </figure>
-      <div className="card-body">
-        <h2 className="card-title text-2xl">{recipeName}</h2>
+      <div className="card-body p-5">
+        <h2 className="card-title md:text-2xl">{recipeName}</h2>
         <p>Cooking Method: {cookingMethod}</p>
         <p className="font-semibold">Ingredients :</p>
         <ul
-          className="list-inside list-disc ps-5
+          className="list-inside list-disc px-3 md:ps-5
         "
         >
           {ingredients.map((ingred, i) => (

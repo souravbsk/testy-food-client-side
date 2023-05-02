@@ -18,30 +18,30 @@ const ChefDetails = () => {
 
   return (
     <div className="pt-32 container">
-      <div className="card border thingIntro-BG items-center bg-no-repeat bg-top bg-contain gap-8 flex-col md:flex-row card-side p-10 bg-base-100 shadow-xl">
+      <div className="card  md:mt-12 border thingIntro-BG items-center bg-no-repeat bg-top bg-contain gap-8 flex-col md:flex-row card-side p-5 md:p-10 bg-base-100 shadow-xl">
         <img
-          className="h-96 w-96  object-fill rounded-2xl"
+          className="md:h-96 h-56 w-96  object-fill rounded-2xl"
           src={chefImage}
           alt="Movie"
         />
-        <div className=" flex-1 space-y-2">
+        <div className="flex-1 space-y-2">
           <p>
             {" "}
             <span className="bg-orange-600 px-3 text-white font-semibold rounded-full">
               {chefId}
             </span>
           </p>
-          <h2 className="card-title text-3xl font-bold text-orange-500">
+          <h2 className="card-title md:text-3xl font-bold text-orange-500">
             {chefName}
           </h2>
-          <p className="text-lg text-gray-800">
+          <p className="md:text-lg text-gray-800">
             <span className="font-medium">Description:</span> {shortBio}
           </p>
-          <p className="text-lg text-gray-800">
+          <p className="md:text-lg text-gray-800">
             <span className="font-medium">years Of Experience:</span>{" "}
             {yearsOfExperience}
           </p>
-          <p className="text-lg text-gray-800">
+          <p className="md:text-lg text-gray-800">
             <span className="font-medium">Recipes Number:</span> {recipesNumber}
           </p>
           <p className="text-lg flex items-center gap-1 text-gray-800">

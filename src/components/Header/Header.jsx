@@ -21,8 +21,8 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-black absolute right-0 left-0 top-0 border-b-2">
-      <nav className=" container flex flex-col md:flex-row py-4 md:py-6 md:items-center justify-between">
+    <div className="bg-gray-900 absolute right-0 left-0 top-0 border-b-2">
+      <nav className=" container flex flex-col md:flex-row py-4 md:items-center justify-between">
         <div className="flex items-center justify-between">
           <Link>
             <h2 className="text-2xl md:text-4xl font-bold text-white font-serif">
