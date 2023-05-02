@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-gray-900 absolute right-0 left-0 top-0 border-b-2">
+    <div className="bg-gray-900  right-0 left-0 top-0">
       <nav className=" container flex flex-col md:flex-row py-4 md:items-center justify-between">
         <div className="flex items-center justify-between">
           <Link>
@@ -55,7 +55,7 @@ const Header = () => {
           </div>
         </div>
         <ul
-          className={`flex flex-col z-50 md:flex-row absolute md:static items-center gap-4 md:h-auto h-screen md:bg-transparent bg-black duration-300 top-20 px-11 ${
+          className={`flex flex-col z-50 md:flex-row absolute md:static items-center gap-4 md:h-auto h-screen md:bg-transparent bg-gray-900 duration-300 top-20 px-11 ${
             isOpen ? "left-0" : "-left-60"
           }`}
         >

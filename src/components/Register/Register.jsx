@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast } from "react-hot-toast";
 import{useNavigate} from "react-router-dom"
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Register = () => {
   const {createUser,updateUserNamePhoto} = useContext(AuthContext);
@@ -36,11 +37,11 @@ const Register = () => {
     }
   };
   return (
-    <div className="mt-20 bg-contain bg-top bg-no-repeat thingIntro-BG">
-      <div className="pt-20 container">
+    <div className="bg-contain bg-top bg-no-repeat thingIntro-BG">
+      <div className=" pt-8 md:pt-20 container">
         <div className=" p-6 card md:w-5/12 max-w-full mx-auto  shadow-2xl bg-base-100">
           <div className="text-center">
-            <h1 className="text-3xl md:text-5xl font-bold">Please Register</h1>
+            <h1 className="text-3xl  font-bold">Please Register</h1>
           </div>
           <form onSubmit={handleRegister} className=" py-5">
             <div className="form-control">
@@ -104,6 +105,7 @@ const Register = () => {
               </Link>{" "}
             </p>
           </div>
+          <SocialLogin></SocialLogin>
         </div>
       </div>
     </div>

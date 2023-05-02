@@ -17,8 +17,8 @@ const ChefDetails = () => {
   } = chef;
 
   return (
-    <div className="pt-32 container">
-      <div className="card  md:mt-12 border thingIntro-BG items-center bg-no-repeat bg-top bg-contain gap-8 flex-col md:flex-row card-side p-5 md:p-10 bg-base-100 shadow-xl">
+    <div className="container">
+      <div className="card mt-8 md:mt-12 border thingIntro-BG md:items-center bg-no-repeat bg-top bg-contain gap-8 flex-col md:flex-row card-side p-5 md:p-10 bg-base-100 shadow-xl">
         <img
           className="md:h-96 h-56 w-96  object-fill rounded-2xl"
           src={chefImage}

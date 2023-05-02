@@ -48,11 +48,11 @@ const from = location?.state?.from?.pathname || "/";
       });
   };
   return (
-    <div className="mt-20 bg-contain bg-top bg-no-repeat thingIntro-BG">
-      <div className="py-20 container">
+    <div className="bg-contain bg-top bg-no-repeat thingIntro-BG">
+      <div className=" pt-8 md:pt-20 container">
         <div className="card p-6 max-w-full md:w-4/12 mx-auto shadow-2xl bg-base-100">
           <div className="text-center">
-            <h1 className="text-3xl md:text-5xl font-bold">Please Login</h1>
+            <h1 className="text-3xl font-bold">Please Login</h1>
           </div>
           <form onSubmit={handleLogin} className=" py-5">
             <div className="form-control">
