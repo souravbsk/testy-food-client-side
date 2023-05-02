@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <footer className=" mt-12 md:mt-20">
       <div className="bg-white pt-12 md:pt-20 dark:bg-gray-900">
-        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div className=" container py-6 lg:py-8">
           <div className="md:flex pb-12 md:pb-20 md:justify-between">
-            <div className="mb-6 md:mb-0">
+            <div className="mb-6  md:mb-0">
               <Link to="/" className="flex items-center">
                 <span className="self-center text-2xl md:text-5xl font-bold text-white">
                   Testy Food
@@ -61,21 +61,23 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                  Legal
-                </h2>
-                <ul className="text-gray-600 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
-                    <Link to="#" className="hover:underline">
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#" className="hover:underline">
-                      Terms &amp; Conditions
-                    </Link>
-                  </li>
-                </ul>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Newsletter</h2>
+
+                <div className="form-control w-80">
+                  <label className="label">
+                    <span className="label-text">Enter your email address</span>
+                  </label>
+                  <div className="relative">
+                    <input
+                      type="text"
+                      placeholder="username@site.com"
+                      className="input input-bordered w-full pr-16"
+                    />
+                    <button className="btn primary-btn absolute top-0 right-0 rounded-l-none">
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

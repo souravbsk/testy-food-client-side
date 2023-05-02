@@ -3,7 +3,6 @@ import React from 'react';
 import {AiFillLike} from "react-icons/ai"
 
 const Chef = ({chef}) => {
-    console.log(chef);
     const {chefImage,chefName,id,likeNumber,yearsOfExperience} = chef;
     return (
         <div className="card overflow-hidden shadow-md glass">

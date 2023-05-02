@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
+import { toast } from "react-hot-toast";
+import{useNavigate} from "react-router-dom"
 
 const Register = () => {
+  const {createUser,updateUserNamePhoto} = useContext(AuthContext);
   const [error, setError] = useState("");
+  const navigate = useNavigate()
   const handleRegister = (e) => {
     e.preventDefault();
     setError("");
@@ -13,17 +18,27 @@ const Register = () => {
     const photo = form.photo.value;
 
     if (password.length < 6) {
-      setError("password at lease 6 corrector");
+      setError("provide password at lease 6 corrector");
       return;
     }
     if (email && password) {
-        console.log('object');
+        createUser(email,password)
+        .then(result => {
+          const currentUser = result.user;
+          console.log(currentUser);
+          updateUserNamePhoto(result.user,name,photo)
+          navigate("/")
+          toast.success("Register success")
+        })
+        .catch(err => {
+          setError(err.message)
+        })
     }
   };
   return (
     <div className="mt-20 bg-contain bg-top bg-no-repeat thingIntro-BG">
       <div className="pt-20 container">
-        <div className=" p-6 card md:w-4/12 max-w-full mx-auto  shadow-2xl bg-base-100">
+        <div className=" p-6 card md:w-5/12 max-w-full mx-auto  shadow-2xl bg-base-100">
           <div className="text-center">
             <h1 className="text-3xl md:text-5xl font-bold">Please Register</h1>
           </div>
@@ -58,7 +73,7 @@ const Register = () => {
               </label>
               <input
                 required
-                type="text"
+                type="password"
                 name="password"
                 placeholder="password"
                 className="input input-bordered"
