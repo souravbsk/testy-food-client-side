@@ -32,10 +32,18 @@ const Header = () => {
           <div className="flex items-center gap-2 md:hidden">
             {user && (
               <p className="text-white">
-                {
-                    user?.photoURL ?<img title={displayName} className="w-12 h-12 rounded-full" src={user?.photoURL} alt="" /> : 
-                    <button onClick={handleLogout} className="primary-btn">Log Out</button>
-                }
+                {user?.photoURL ? (
+                  <img
+                    title={displayName}
+                    className="w-12 h-12 rounded-full"
+                    src={user?.photoURL}
+                    alt=""
+                  />
+                ) : (
+                  <span className="text-white">
+                   {displayName}
+                  </span>
+                )}
               </p>
             )}
             <button
@@ -61,25 +69,28 @@ const Header = () => {
               Blog
             </NavLink>
           </li>
+          {user?.photoURL && (
+            <li className="hidden md:block">
+             {user?.photoURL ? (
+                  <img
+                    title={displayName}
+                    className="w-12 h-12 rounded-full"
+                    src={user?.photoURL}
+                    alt=""
+                  />
+                ) : (
+                  <span className="text-white">
+                   {displayName}
+                  </span>
+                )}
+            </li>
+          )}
 
           <li className="px-3 py-3">
             {user ? (
-              <div>
-                {userPhoto ? (
-                  <Link className="hidden md:block">
-                    <img
-                      title={displayName}
-                      className="w-12 h-12 rounded-full object-fill object-top"
-                      src={userPhoto}
-                      alt=""
-                    />
-                  </Link>
-                ) : (
-                  <button className="btn primary-btn" onClick={handleLogout}>
-                    Logout
-                  </button>
-                )}
-              </div>
+              <button className="btn primary-btn" onClick={handleLogout}>
+                Logout
+              </button>
             ) : (
               <NavLink to="/login" className="text-xl text-white font-medium">
                 <button>Login</button>

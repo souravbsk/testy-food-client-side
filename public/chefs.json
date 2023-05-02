@@ -4,296 +4,314 @@
     "chefName": "John Smith",
     "yearsOfExperience": 10,
     "likeNumber": 1000,
+    "recipesNumber":3,
     "id": 1,
     "chefId": "chef123",
     "shortBio": "John Smith is a renowned chef with a passion for creating new and exciting dishes. He has won numerous awards for his culinary creations and has been featured in several national cooking magazines.",
-    "recipes": [
+    "recipes":[
       {
-        "recipeName": "Spicy Shrimp Pasta",
+        "recipeName": "Chingri Macher Malaikari",
         "recipeId": 1,
-        "cookingMethod": "Saute",
         "ratings": 4.5,
-        "ingredients": [
-          "1 pound of shrimp",
-          "1 pound of pasta",
-          "1/2 cup of olive oil",
-          "4 cloves of garlic",
-          "1 teaspoon of red pepper flakes"
-        ]
+        "cookingMethod": "Stovetop",
+        "ingredients": ["Prawns", "Coconut Milk", "Mustard Oil", "Spices"],
+        "image": "https://example.com/chingri-macher-malaikari.jpg"
       },
       {
-        "recipeName": "Lemon Herb Chicken",
+        "recipeName": "Kosha Mangsho",
         "recipeId": 2,
-        "cookingMethod": "Bake",
         "ratings": 4.2,
-        "ingredients": [
-          "4 chicken breasts",
-          "1/4 cup of lemon juice",
-          "2 tablespoons of olive oil",
-          "2 cloves of garlic",
-          "1 tablespoon of dried oregano"
-        ]
+        "cookingMethod": "Pressure Cooker",
+        "ingredients": ["Mutton", "Onion", "Tomato", "Spices"],
+        "image": "https://example.com/kosha-mangsho.jpg"
       },
       {
-        "recipeName": "Grilled Steak with Chimichurri Sauce",
+        "recipeName": "Shorshe Ilish",
         "recipeId": 3,
-        "cookingMethod": "Grill",
         "ratings": 4.8,
-        "ingredients": [
-          "2 ribeye steaks",
-          "1 cup of fresh parsley",
-          "1/4 cup of red wine vinegar",
-          "3 cloves of garlic",
-          "1/2 teaspoon of red pepper flakes"
-        ]
+        "cookingMethod": "Stovetop",
+        "ingredients": ["Hilsa Fish", "Mustard Paste", "Green Chili", "Spices"],
+        "image": "https://example.com/shorshe-ilish.jpg"
+      },
+      {
+        "recipeName": "Luchi",
+        "recipeId": 4,
+        "ratings": 4.3,
+        "cookingMethod": "Frying",
+        "ingredients": ["Flour", "Oil", "Salt"],
+        "image": "https://example.com/luchi.jpg"
+      },
+      {
+        "recipeName": "Mishti Doi",
+        "recipeId": 5,
+        "ratings": 4.9,
+        "cookingMethod": "Baking",
+        "ingredients": ["Milk", "Sugar", "Yogurt Culture"],
+        "image": "https://example.com/mishti-doi.jpg"
       }
     ]
+    
   },
   {
     "chefImage": "https://i.ibb.co/2tyswpH/jeff-siepman-z-Ixd-GQ7l-PU-unsplash.jpg",
     "chefName": "Sarah Johnson",
     "yearsOfExperience": 5,
     "likeNumber": 500,
+    "recipesNumber":3,
     "id": 2,
     "chefId": "chef456",
     "shortBio": "John Smith is a renowned chef with a passion for creating new and exciting dishes. He has won numerous awards for his culinary creations and has been featured in several national cooking magazines.",
     "recipes": [
       {
-        "recipeName": "Spicy Shrimp Pasta",
+        "recipeName": "Chingri Macher Malaikari",
         "recipeId": 1,
-        "cookingMethod": "Saute",
         "ratings": 4.5,
-        "ingredients": [
-          "1 pound of shrimp",
-          "1 pound of pasta",
-          "1/2 cup of olive oil",
-          "4 cloves of garlic",
-          "1 teaspoon of red pepper flakes"
-        ]
+        "cookingMethod": "Stovetop",
+        "ingredients": ["Prawns", "Coconut Milk", "Mustard Oil", "Spices"],
+        "image": "https://example.com/chingri-macher-malaikari.jpg"
       },
       {
-        "recipeName": "Lemon Herb Chicken",
+        "recipeName": "Kosha Mangsho",
         "recipeId": 2,
-        "cookingMethod": "Bake",
         "ratings": 4.2,
-        "ingredients": [
-          "4 chicken breasts",
-          "1/4 cup of lemon juice",
-          "2 tablespoons of olive oil",
-          "2 cloves of garlic",
-          "1 tablespoon of dried oregano"
-        ]
+        "cookingMethod": "Pressure Cooker",
+        "ingredients": ["Mutton", "Onion", "Tomato", "Spices"],
+        "image": "https://example.com/kosha-mangsho.jpg"
       },
       {
-        "recipeName": "Grilled Steak with Chimichurri Sauce",
+        "recipeName": "Shorshe Ilish",
         "recipeId": 3,
-        "cookingMethod": "Grill",
         "ratings": 4.8,
-        "ingredients": [
-          "2 ribeye steaks",
-          "1 cup of fresh parsley",
-          "1/4 cup of red wine vinegar",
-          "3 cloves of garlic",
-          "1/2 teaspoon of red pepper flakes"
-        ]
+        "cookingMethod": "Stovetop",
+        "ingredients": ["Hilsa Fish", "Mustard Paste", "Green Chili", "Spices"],
+        "image": "https://example.com/shorshe-ilish.jpg"
+      },
+      {
+        "recipeName": "Luchi",
+        "recipeId": 4,
+        "ratings": 4.3,
+        "cookingMethod": "Frying",
+        "ingredients": ["Flour", "Oil", "Salt"],
+        "image": "https://example.com/luchi.jpg"
+      },
+      {
+        "recipeName": "Mishti Doi",
+        "recipeId": 5,
+        "ratings": 4.9,
+        "cookingMethod": "Baking",
+        "ingredients": ["Milk", "Sugar", "Yogurt Culture"],
+        "image": "https://example.com/mishti-doi.jpg"
       }
     ]
+    
   },
   {
     "chefImage": "https://i.ibb.co/9nRb9zT/rc-cf-FMh5o5m5-N9-E-unsplash.jpg",
     "chefName": "Michael Lee",
     "yearsOfExperience": 8,
     "likeNumber": 800,
+    "recipesNumber":3,
     "id": 3,
     "chefId": "chef789",
     "shortBio": "Michael Lee is a classically trained chef who has worked in some of the world's top restaurants. He has a passion for using fresh, seasonal ingredients to create dishes that are both simple and elegant.",
     "recipes": [
       {
-        "recipeName": "Beef Bourguignon",
-        "recipeId": 7,
-        "cookingMethod": "Stew",
-        "ratings": 4.9,
-        "ingredients": [
-          "2 pounds of beef chuck",
-          "1 bottle of red wine",
-          "2 cups of beef broth",
-          "4 carrots",
-          "1 onion"
-        ]
+        "recipeName": "Chingri Macher Malaikari",
+        "recipeId": 1,
+        "ratings": 4.5,
+        "cookingMethod": "Stovetop",
+        "ingredients": ["Prawns", "Coconut Milk", "Mustard Oil", "Spices"],
+        "image": "https://example.com/chingri-macher-malaikari.jpg"
       },
       {
-        "recipeName": "Mushroom Risotto",
-        "recipeId": 8,
-        "cookingMethod": "Simmer",
-        "ratings": 4.6,
-        "ingredients": [
-          "1 pound of arborio rice",
-          "4 cups of chicken broth",
-          "1/2 cup of white wine",
-          "1 pound of mushrooms",
-          "1/2 cup of grated parmesan cheese"
-        ]
-      },
-      {
-        "recipeName": "Grilled Salmon with Mango Salsa",
-        "recipeId": 9,
-        "cookingMethod": "Grill",
+        "recipeName": "Kosha Mangsho",
+        "recipeId": 2,
         "ratings": 4.2,
-        "ingredients": [
-          "2 salmon fillets",
-          "1 mango",
-          "1 red onion",
-          "1/4 cup of cilantro",
-          "1 tablespoon of lime juice"
-        ]
+        "cookingMethod": "Pressure Cooker",
+        "ingredients": ["Mutton", "Onion", "Tomato", "Spices"],
+        "image": "https://example.com/kosha-mangsho.jpg"
+      },
+      {
+        "recipeName": "Shorshe Ilish",
+        "recipeId": 3,
+        "ratings": 4.8,
+        "cookingMethod": "Stovetop",
+        "ingredients": ["Hilsa Fish", "Mustard Paste", "Green Chili", "Spices"],
+        "image": "https://example.com/shorshe-ilish.jpg"
+      },
+      {
+        "recipeName": "Luchi",
+        "recipeId": 4,
+        "ratings": 4.3,
+        "cookingMethod": "Frying",
+        "ingredients": ["Flour", "Oil", "Salt"],
+        "image": "https://example.com/luchi.jpg"
+      },
+      {
+        "recipeName": "Mishti Doi",
+        "recipeId": 5,
+        "ratings": 4.9,
+        "cookingMethod": "Baking",
+        "ingredients": ["Milk", "Sugar", "Yogurt Culture"],
+        "image": "https://example.com/mishti-doi.jpg"
       }
     ]
+    
   },
   {
     "chefImage": "https://i.ibb.co/P4c2m9y/bluebird-provisions-l-RAWc-T7uwh-Y-unsplash.jpg",
     "chefName": "Emily Davis",
     "yearsOfExperience": 6,
     "likeNumber": 600,
+    "recipesNumber":3,
     "id": 4,
     "chefId": "chef012",
-    "recipes": [
+    "recipes":[
       {
-        "recipeName": "Beef Bourguignon",
-        "recipeId": 7,
-        "cookingMethod": "Stew",
-        "ratings": 4.9,
-        "ingredients": [
-          "2 pounds of beef chuck",
-          "1 bottle of red wine",
-          "2 cups of beef broth",
-          "4 carrots",
-          "1 onion"
-        ]
+        "recipeName": "Chingri Macher Malaikari",
+        "recipeId": 1,
+        "ratings": 4.5,
+        "cookingMethod": "Stovetop",
+        "ingredients": ["Prawns", "Coconut Milk", "Mustard Oil", "Spices"],
+        "image": "https://example.com/chingri-macher-malaikari.jpg"
       },
       {
-        "recipeName": "Mushroom Risotto",
-        "recipeId": 8,
-        "cookingMethod": "Simmer",
-        "ratings": 4.6,
-        "ingredients": [
-          "1 pound of arborio rice",
-          "4 cups of chicken broth",
-          "1/2 cup of white wine",
-          "1 pound of mushrooms",
-          "1/2 cup of grated parmesan cheese"
-        ]
-      },
-      {
-        "recipeName": "Grilled Salmon with Mango Salsa",
-        "recipeId": 9,
-        "cookingMethod": "Grill",
+        "recipeName": "Kosha Mangsho",
+        "recipeId": 2,
         "ratings": 4.2,
-        "ingredients": [
-          "2 salmon fillets",
-          "1 mango",
-          "1 red onion",
-          "1/4 cup of cilantro",
-          "1 tablespoon of lime juice"
-        ]
+        "cookingMethod": "Pressure Cooker",
+        "ingredients": ["Mutton", "Onion", "Tomato", "Spices"],
+        "image": "https://example.com/kosha-mangsho.jpg"
+      },
+      {
+        "recipeName": "Shorshe Ilish",
+        "recipeId": 3,
+        "ratings": 4.8,
+        "cookingMethod": "Stovetop",
+        "ingredients": ["Hilsa Fish", "Mustard Paste", "Green Chili", "Spices"],
+        "image": "https://example.com/shorshe-ilish.jpg"
+      },
+      {
+        "recipeName": "Luchi",
+        "recipeId": 4,
+        "ratings": 4.3,
+        "cookingMethod": "Frying",
+        "ingredients": ["Flour", "Oil", "Salt"],
+        "image": "https://example.com/luchi.jpg"
+      },
+      {
+        "recipeName": "Mishti Doi",
+        "recipeId": 5,
+        "ratings": 4.9,
+        "cookingMethod": "Baking",
+        "ingredients": ["Milk", "Sugar", "Yogurt Culture"],
+        "image": "https://example.com/mishti-doi.jpg"
       }
     ]
+    
   },
   {
     "chefImage": "https://i.ibb.co/FwWYZ8y/ronan-kruithof-llc-X9p-Tjh-XM-unsplash.jpg",
     "chefName": "Daniel Kim",
     "yearsOfExperience": 12,
     "likeNumber": 1200,
+    "recipesNumber":3,
     "id": 5,
     "chefId": "chef345",
     "recipes": [
       {
-        "recipeName": "Beef Bourguignon",
-        "recipeId": 7,
-        "cookingMethod": "Stew",
-        "ratings": 4.9,
-        "ingredients": [
-          "2 pounds of beef chuck",
-          "1 bottle of red wine",
-          "2 cups of beef broth",
-          "4 carrots",
-          "1 onion"
-        ]
+        "recipeName": "Chingri Macher Malaikari",
+        "recipeId": 1,
+        "ratings": 4.5,
+        "cookingMethod": "Stovetop",
+        "ingredients": ["Prawns", "Coconut Milk", "Mustard Oil", "Spices"],
+        "image": "https://example.com/chingri-macher-malaikari.jpg"
       },
       {
-        "recipeName": "Mushroom Risotto",
-        "recipeId": 8,
-        "cookingMethod": "Simmer",
-        "ratings": 4.6,
-        "ingredients": [
-          "1 pound of arborio rice",
-          "4 cups of chicken broth",
-          "1/2 cup of white wine",
-          "1 pound of mushrooms",
-          "1/2 cup of grated parmesan cheese"
-        ]
-      },
-      {
-        "recipeName": "Grilled Salmon with Mango Salsa",
-        "recipeId": 9,
-        "cookingMethod": "Grill",
+        "recipeName": "Kosha Mangsho",
+        "recipeId": 2,
         "ratings": 4.2,
-        "ingredients": [
-          "2 salmon fillets",
-          "1 mango",
-          "1 red onion",
-          "1/4 cup of cilantro",
-          "1 tablespoon of lime juice"
-        ]
+        "cookingMethod": "Pressure Cooker",
+        "ingredients": ["Mutton", "Onion", "Tomato", "Spices"],
+        "image": "https://example.com/kosha-mangsho.jpg"
+      },
+      {
+        "recipeName": "Shorshe Ilish",
+        "recipeId": 3,
+        "ratings": 4.8,
+        "cookingMethod": "Stovetop",
+        "ingredients": ["Hilsa Fish", "Mustard Paste", "Green Chili", "Spices"],
+        "image": "https://example.com/shorshe-ilish.jpg"
+      },
+      {
+        "recipeName": "Luchi",
+        "recipeId": 4,
+        "ratings": 4.3,
+        "cookingMethod": "Frying",
+        "ingredients": ["Flour", "Oil", "Salt"],
+        "image": "https://example.com/luchi.jpg"
+      },
+      {
+        "recipeName": "Mishti Doi",
+        "recipeId": 5,
+        "ratings": 4.9,
+        "cookingMethod": "Baking",
+        "ingredients": ["Milk", "Sugar", "Yogurt Culture"],
+        "image": "https://example.com/mishti-doi.jpg"
       }
     ]
+    
   },
   {
     "chefImage": "https://i.ibb.co/44ZRv1H/petr-sevcovic-e5-Q5v-WO55u-U-unsplash.jpg",
     "chefName": "Jessica Brown",
     "yearsOfExperience": 2,
     "likeNumber": 200,
+    "recipesNumber":3,
     "id": 6,
     "chefId": "chef678",
     "recipes": [
       {
-        "recipeName": "Beef Bourguignon",
-        "recipeId": 7,
-        "cookingMethod": "Stew",
-        "ratings": 4.9,
-        "ingredients": [
-          "2 pounds of beef chuck",
-          "1 bottle of red wine",
-          "2 cups of beef broth",
-          "4 carrots",
-          "1 onion"
-        ]
+        "recipeName": "Chingri Macher Malaikari",
+        "recipeId": 1,
+        "ratings": 4.5,
+        "cookingMethod": "Stovetop",
+        "ingredients": ["Prawns", "Coconut Milk", "Mustard Oil", "Spices"],
+        "image": "https://example.com/chingri-macher-malaikari.jpg"
       },
       {
-        "recipeName": "Mushroom Risotto",
-        "recipeId": 8,
-        "cookingMethod": "Simmer",
-        "ratings": 4.6,
-        "ingredients": [
-          "1 pound of arborio rice",
-          "4 cups of chicken broth",
-          "1/2 cup of white wine",
-          "1 pound of mushrooms",
-          "1/2 cup of grated parmesan cheese"
-        ]
-      },
-      {
-        "recipeName": "Grilled Salmon with Mango Salsa",
-        "recipeId": 9,
-        "cookingMethod": "Grill",
+        "recipeName": "Kosha Mangsho",
+        "recipeId": 2,
         "ratings": 4.2,
-        "ingredients": [
-          "2 salmon fillets",
-          "1 mango",
-          "1 red onion",
-          "1/4 cup of cilantro",
-          "1 tablespoon of lime juice"
-        ]
+        "cookingMethod": "Pressure Cooker",
+        "ingredients": ["Mutton", "Onion", "Tomato", "Spices"],
+        "image": "https://example.com/kosha-mangsho.jpg"
+      },
+      {
+        "recipeName": "Shorshe Ilish",
+        "recipeId": 3,
+        "ratings": 4.8,
+        "cookingMethod": "Stovetop",
+        "ingredients": ["Hilsa Fish", "Mustard Paste", "Green Chili", "Spices"],
+        "image": "https://example.com/shorshe-ilish.jpg"
+      },
+      {
+        "recipeName": "Luchi",
+        "recipeId": 4,
+        "ratings": 4.3,
+        "cookingMethod": "Frying",
+        "ingredients": ["Flour", "Oil", "Salt"],
+        "image": "https://example.com/luchi.jpg"
+      },
+      {
+        "recipeName": "Mishti Doi",
+        "recipeId": 5,
+        "ratings": 4.9,
+        "cookingMethod": "Baking",
+        "ingredients": ["Milk", "Sugar", "Yogurt Culture"],
+        "image": "https://example.com/mishti-doi.jpg"
       }
     ]
+    
   }
 ]
