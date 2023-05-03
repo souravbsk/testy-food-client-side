@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast } from "react-hot-toast";
 import{useNavigate} from "react-router-dom"
@@ -8,7 +8,10 @@ import SocialLogin from "../SocialLogin/SocialLogin";
 const Register = () => {
   const {createUser,updateUserNamePhoto} = useContext(AuthContext);
   const [error, setError] = useState("");
-  const navigate = useNavigate()
+  const location = useLocation();
+const navigate = useNavigate();
+
+const from = location?.state?.from?.pathname || "/";
   const handleRegister = (e) => {
     e.preventDefault();
     setError("");
@@ -28,7 +31,7 @@ const Register = () => {
           const currentUser = result.user;
           console.log(currentUser);
           updateUserNamePhoto(result.user,name,photo)
-          navigate("/")
+          navigate(from,{replace:true})
           toast.success("Register success")
         })
         .catch(err => {
@@ -105,7 +108,7 @@ const Register = () => {
               </Link>{" "}
             </p>
           </div>
-          <SocialLogin></SocialLogin>
+          <SocialLogin from={from}></SocialLogin>
         </div>
       </div>
     </div>

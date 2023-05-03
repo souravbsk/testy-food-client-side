@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import React, { useContext, useState } from 'react';
 import {FcGoogle} from "react-icons/fc"
 import {FaGithub} from "react-icons/fa"
 import { AuthContext } from '../../Provider/AuthProvider';
 import { toast } from 'react-hot-toast';
 import {useNavigate} from "react-router-dom";
-const SocialLogin = () => {
+const SocialLogin = ({from}) => {
     const [error,setError] = useState("")
     const {GoogleSignIn,GithubSignIn} = useContext(AuthContext);
 const navigate = useNavigate()
@@ -14,7 +15,7 @@ const navigate = useNavigate()
         .then(res => {
             const currentUser = res.user;
             toast.success(`Hey, ${currentUser.displayName} welcome to Testy Food`)
-            navigate("/")
+            navigate(from,{replace:true})
         })
         .then(err => {
             console.log(err.message);
@@ -28,7 +29,7 @@ const navigate = useNavigate()
         .then(res => {
             const currentUser = res.user;
             toast.success(`Hey, ${currentUser.displayName} welcome to Testy Food`)
-            navigate("/")
+            navigate(from,{replace:true})
         })
         .then(err => {
             console.log(err.message);

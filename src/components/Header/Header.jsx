@@ -25,8 +25,8 @@ const Header = () => {
       <nav className=" container flex flex-col md:flex-row py-4 md:items-center justify-between">
         <div className="flex items-center justify-between">
           <Link>
-            <h2 className="text-2xl md:text-4xl font-bold text-white font-serif">
-              Testy Food
+            <h2 className="text-2xl md:text-4xl font-extrabold text-white font-mono">
+              Testy F<span className="text-orange-500">oo</span>d
             </h2>
           </Link>
           <div className="flex items-center gap-2 md:hidden">

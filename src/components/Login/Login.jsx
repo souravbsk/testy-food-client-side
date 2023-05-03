@@ -103,7 +103,7 @@ const from = location?.state?.from?.pathname || "/";
             </p>
           </div>
 
-          <SocialLogin></SocialLogin>
+          <SocialLogin from={from}></SocialLogin>
         </div>
       </div>
     </div>
