@@ -7,6 +7,7 @@ import ChefDetails from "../components/ChefDetails/ChefDetails";
 import PrivateRoute from "./PrivateRoute";
 import NotFoundPage from "../components/NotFoundPage/NotFoundPage";
 import Blogs from "../components/Blogs/Blogs";
+import Profile from "../components/Profile/Profile";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/my-account",
+        element: <Profile></Profile>,
       },
       {
         path: "*",

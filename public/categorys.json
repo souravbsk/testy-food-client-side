@@ -5,7 +5,7 @@
     "ratings": 4.7,
     "cookingMethod": "Simmered in coconut milk and spices",
     "ingredients": ["Prawns", "coconut milk", "ginger", "garlic", "turmeric", "green chilies"],
-    "image": "https://example.com/chingri-malai-curry.jpg"
+    "image": "https://i.ibb.co/mtpxvkC/Shutterstock-1916557661.jpg"
   },
   {
     "recipeName": "Mishti Doi",
@@ -13,7 +13,7 @@
     "ratings": 4.1,
     "cookingMethod": "Baked or Steamed",
     "ingredients": ["Milk", "sugar", "yogurt culture", "cardamom"],
-    "image": "https://example.com/mishti-doi.jpg"
+    "image": "https://i.ibb.co/1ZphZnd/mishti-doi-109140-2-1.jpg"
   },
   {
     "recipeName": "Bhapa Ilish",
@@ -21,7 +21,7 @@
     "ratings": 4.9,
     "cookingMethod": "Steamed with mustard paste",
     "ingredients": ["Hilsa fish", "mustard paste", "green chili", "coconut", "curd", "salt"],
-    "image": "https://example.com/bhapa-ilish.jpg"
+    "image": "https://i.ibb.co/MCXVzW9/abhik-paul-Lsiv0o-AIf-Fk-unsplash-1.jpg"
   },
   {
     "recipeName": "Luchi",
@@ -29,15 +29,15 @@
     "ratings": 4.8,
     "cookingMethod": "Deep fried",
     "ingredients": ["Maida", "salt", "oil", "water", "sugar", "ghee"],
-    "image": "https://example.com/luchi.jpg"
+    "image": "https://i.ibb.co/PTHr6GC/1-56.jpg"
   },
   {
-    "recipeName": "Bhaja Moong Dal",
+    "recipeName": "Chotpoti",
     "recipeId": 10,
     "ratings": 4.2,
     "cookingMethod": "Stovetop",
     "ingredients": ["Moong dal", "cumin seeds", "bay leaf", "dry red chili", "oil", "salt"],
-    "image": "https://example.com/bhaja-moong-dal.jpg"
+    "image": "https://i.ibb.co/MCXVzW9/abhik-paul-Lsiv0o-AIf-Fk-unsplash-1.jpg"
   },
   {
     "recipeName": "Kolkata Biryani",
@@ -45,7 +45,7 @@
     "ratings": 4.5,
     "cookingMethod": "Stovetop",
     "ingredients": ["Basmati rice", "mutton", "potatoes", "yogurt", "bay leaf", "saffron"],
-    "image": "https://example.com/kolkata-biryani.jpg"
+    "image": "https://i.ibb.co/JzSqGrr/side-view-pilaf-with-stewed-beef-meat-plate-1.jpg"
   },
   {
     "recipeName": "Aloo Posto",
@@ -53,7 +53,7 @@
     "ratings": 4.3,
     "cookingMethod": "Stovetop",
     "ingredients": ["Potatoes", "poppy seeds", "green chilies", "mustard oil", "turmeric", "salt"],
-    "image": "https://example.com/aloo-posto.jpg"
+    "image": "https://i.ibb.co/jgZ2Msy/indian-dhal-spicy-curry-bowl-spices-herbs-rustic-black-wooden-table-1.jpg"
   },
   {
     "recipeName": "Shukto",
@@ -61,7 +61,7 @@
     "ratings": 4.0,
     "cookingMethod": "Stovetop",
     "ingredients": ["Bitter gourd", "eggplant", "sweet potato", "radish", "green banana", "milk"],
-    "image": "https://example.com/shukto.jpg"
+    "image": "https://i.ibb.co/PxC6j8Z/beans-soup-meat-carrot-potato-tomato-greens-side-view-1.jpg"
   },
   {
     "recipeName": "Chomchom",
@@ -69,7 +69,7 @@
     "ratings": 4.6,
     "cookingMethod": "Boiled in sugar syrup",
     "ingredients": ["Chhena", "sugar", "cardamom", "rose water", "pistachios", "silver leaf"],
-    "image": "https://example.com/chomchom.jpg"
+    "image": "https://i.ibb.co/DzHnQf0/rosh-chomchom-1.jpg"
   },
   {
     "recipeName": "Macher Kalia",
@@ -77,6 +77,6 @@
     "ratings": 4.4,
     "cookingMethod": "Stovetop",
     "ingredients": ["Fish", "onions", "tomatoes", "ginger", "garlic", "coriander powder"],
-    "image": "https://example.com/macher-kalia.jpg"
+    "image": "https://i.ibb.co/5KKPpH4/Macher-jhol.jpg"
   }
 ]

@@ -7,6 +7,7 @@ const Footer = () => {
       <div className="container pb-8 gap-8 flex-col md:flex-row flex justify-between">
         <div>
           <h2 className="text-white font-bold text-5xl">Testy Food</h2>
+          
         </div>
         <div className="space-y-3">
           <ul className="text-white space-y-2">
@@ -46,7 +47,7 @@ const Footer = () => {
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2023{" "}
           <Link to="https://flowbite.com/" className="hover:underline">
-          Test Food
+            Testy Food
           </Link>{" "}
           . All Rights Reserved.
         </span>

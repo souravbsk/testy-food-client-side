@@ -31,6 +31,7 @@ const Header = () => {
           </Link>
           <div className="flex items-center gap-2 md:hidden">
             {user && (
+              <Link to='/my-account'>
               <p className="text-white">
                 {user?.photoURL ? (
                   <img
@@ -45,6 +46,7 @@ const Header = () => {
                   </span>
                 )}
               </p>
+              </Link>
             )}
             <button
               onClick={() => setOpen(!isOpen)}
@@ -71,6 +73,7 @@ const Header = () => {
           </li>
           {user?.photoURL && (
             <li className="hidden md:block">
+             <Link to="/my-account">
              {user?.photoURL ? (
                   <img
                     title={displayName}
@@ -83,6 +86,7 @@ const Header = () => {
                    {displayName}
                   </span>
                 )}
+             </Link>
             </li>
           )}
 
