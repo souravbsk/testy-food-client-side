@@ -4,6 +4,7 @@ import OurChefs from '../OurChefs/OurChefs';
 import {useLoaderData} from "react-router-dom"
 import Categories from '../Categories/Categories';
 import ThinkIntro from '../ThinkIntro/ThinkIntro';
+import MapLocation from '../MapLocation/MapLocation';
 
 const Home = () => {
     const chefs = useLoaderData();
@@ -12,8 +13,9 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <ThinkIntro></ThinkIntro>
-            <Categories></Categories>
             <OurChefs chefs={chefs}></OurChefs>
+            <Categories></Categories>
+            {/* <MapLocation></MapLocation> */}
         </div>
     );
 };

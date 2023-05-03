@@ -5,15 +5,16 @@ import { Link } from 'react-router-dom';
 import LazyLoad from 'react-lazy-load';
 
 const Chef = ({chef}) => {
-    const {chefImage,chefName,chefId,likeNumber,yearsOfExperience,recipesNumber} = chef;
+    const {chefImage,chefName,chefId,likeNumber,yearsOfExperience,recipesNumber,recipes} = chef;
     return (
-      <LazyLoad offset={300}>
+      
+          <LazyLoad height={420} threshold={0.95} offset={100}>
         <div className="card overflow-hidden shadow-md glass">
         <img className='h-56 object-top w-full object-fill' src={chefImage} alt={chefName}/>
         <div className="p-5 space-y-1">
           <h2 className="card-title">{chefName}</h2>
           <p><span className='text-lg font-medium'>Experience:</span> {yearsOfExperience} year</p>
-          <p><span className='text-lg font-medium'>recipe:</span> {recipesNumber}</p>
+          <p><span className='text-lg font-medium'>recipe:</span> {recipes.length}</p>
           <div className="flex justify-between items-center">
             <p className='flex items-center gap-1'><AiFillLike className='text-2xl text-orange-500'></AiFillLike>{likeNumber}</p>
             <Link to={`/chefrecipe/${chefId}`}>
@@ -22,7 +23,7 @@ const Chef = ({chef}) => {
           </div>
         </div>
       </div>
-      </LazyLoad>
+        </LazyLoad>
     );
 };
 

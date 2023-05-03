@@ -12,17 +12,18 @@ const Recipe = ({ recipe }) => {
   const [Favorite, setFavorite] = useState(false);
 
   const handleFavorite = () => {
-    toast.success(recipeName + "add to favourite");
+    toast.success(recipeName + " add to favourite");
     setFavorite(true);
   };
 
   return (
     <LazyLoad offset={300}>
-      <div className="card border bg-base-100 shadow-xl">
+      <div className="card h-full border bg-base-100 shadow-xl">
         <figure className="px-10 pt-5 md:pt-10">
-          <img src={image} alt="Shoes" className="rounded-full border" />
+          <img src={image} alt="Shoes" className="rounded-full w-56 h-56 border" />
         </figure>
         <div className="card-body p-5">
+          <div>
           <h2 className="card-title md:text-2xl">{recipeName}</h2>
           <p>Cooking Method: {cookingMethod}</p>
           <p className="font-semibold">Ingredients :</p>
@@ -34,7 +35,8 @@ const Recipe = ({ recipe }) => {
               <li key={i}>{ingred}</li>
             ))}
           </ul>
-          <div className="card-actions">
+          </div>
+          <div className="card-actions mt-auto">
             <p className="flex items-center gap-1">
               <Rating style={{ maxWidth: 100 }} value={ratings} readOnly />
               <span>{ratings}</span>

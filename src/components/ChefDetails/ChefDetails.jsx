@@ -1,10 +1,11 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import Recipe from "../Recipe/Recipe";
 import {AiFillLike} from "react-icons/ai"
 
 const ChefDetails = () => {
   const chef = useLoaderData();
+  const navigate = useNavigate();
   const {
     chefImage,
     chefName,
@@ -15,7 +16,9 @@ const ChefDetails = () => {
     shortBio,
     recipes,
   } = chef;
-
+const handleGoBack = () => {
+  navigate(-1)
+}
   return (
     <div className="container">
       <div className="card mt-8 md:mt-12 border thingIntro-BG md:items-center bg-no-repeat bg-top bg-contain gap-8 flex-col md:flex-row card-side p-5 md:p-10 bg-base-100 shadow-xl">
@@ -42,7 +45,7 @@ const ChefDetails = () => {
             {yearsOfExperience}
           </p>
           <p className="md:text-lg text-gray-800">
-            <span className="font-medium">Recipes Number:</span> {recipesNumber}
+            <span className="font-medium">Recipes Number:</span> {recipes.length}
           </p>
           <p className="text-lg flex items-center gap-1 text-gray-800">
             <AiFillLike className="text-2xl text-orange-500"></AiFillLike> {likeNumber}
@@ -51,10 +54,13 @@ const ChefDetails = () => {
       </div>
       <div className="my-5">
         <h3 className="text-3xl text-center mt-12 font-thin text-orange-600 font-mono">
-          Recipe Length: {recipesNumber}
+          Recipe Length: {recipes.length}
         </h3>
         <div className="grid md:grid-cols-3 gap-8 mt-8">
             {recipes?.map(recipe => <Recipe key={recipe?.recipeId} recipe={recipe}></Recipe>)}
+            </div>
+            <div className="mt-14 text-center">
+              <button onClick={handleGoBack} className="btn">Go to Back</button>
             </div>
       </div>
     </div>
