@@ -13,6 +13,7 @@ const Profile = () => {
   console.log(user);
 const handleLogout = ()  => {
     toast.success("log out success")
+    navigate("/login")
     logOutUser()
 }
 const handleUpdateProfile = (e) => {

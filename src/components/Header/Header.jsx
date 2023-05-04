@@ -10,9 +10,11 @@ const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
   const handleLogout = () => {
+    toast.success("log out success");
+    navigate("/login")
     logOutUser()
       .then(() => {
-        toast.success("log out success");
+       
       })
       .catch((err) => {
         console.log(err.message);
