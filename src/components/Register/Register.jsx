@@ -8,10 +8,8 @@ import SocialLogin from "../SocialLogin/SocialLogin";
 const Register = () => {
   const {createUser,updateUserNamePhoto} = useContext(AuthContext);
   const [error, setError] = useState("");
-  const location = useLocation();
 const navigate = useNavigate();
 
-const from = location?.state?.from?.pathname || "/";
   const handleRegister = (e) => {
     e.preventDefault();
     setError("");
@@ -22,7 +20,7 @@ const from = location?.state?.from?.pathname || "/";
     const photo = form.photo.value;
 
     if (password.length < 6) {
-      setError("provide password at lease 6 corrector");
+      setError("provide password at least 6 corrector");
       return;
     }
     if (email && password) {
@@ -31,7 +29,7 @@ const from = location?.state?.from?.pathname || "/";
           const currentUser = result.user;
           console.log(currentUser);
           updateUserNamePhoto(result.user,name,photo)
-          navigate(from,{replace:true})
+          navigate("/")
           toast.success("Register success")
         })
         .catch(err => {
@@ -108,7 +106,7 @@ const from = location?.state?.from?.pathname || "/";
               </Link>{" "}
             </p>
           </div>
-          <SocialLogin from={from}></SocialLogin>
+          <SocialLogin from="/"></SocialLogin>
         </div>
       </div>
     </div>

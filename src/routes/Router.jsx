@@ -8,6 +8,7 @@ import PrivateRoute from "./PrivateRoute";
 import NotFoundPage from "../components/NotFoundPage/NotFoundPage";
 import Blogs from "../components/Blogs/Blogs";
 import Profile from "../components/Profile/Profile";
+import About from "../components/About/About";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
           fetch(
             `https://test-food-server-souravbsk.vercel.app/chefrecipe/${params?.chefId}`
           ),
+      },
+      {
+        path: "/about",
+        element: <About></About>,
       },
       {
         path: "/blog",

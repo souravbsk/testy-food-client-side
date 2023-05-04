@@ -5,6 +5,7 @@ import {useLoaderData} from "react-router-dom"
 import Categories from '../Categories/Categories';
 import ThinkIntro from '../ThinkIntro/ThinkIntro';
 import MapLocation from '../MapLocation/MapLocation';
+import Reviews from '../Reviews/Reviews';
 
 const Home = () => {
     const chefs = useLoaderData();
@@ -15,6 +16,7 @@ const Home = () => {
             <ThinkIntro></ThinkIntro>
             <OurChefs chefs={chefs}></OurChefs>
             <Categories></Categories>
+            <Reviews></Reviews>
             {/* <MapLocation></MapLocation> */}
         </div>
     );

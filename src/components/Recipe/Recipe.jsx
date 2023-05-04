@@ -36,11 +36,11 @@ const Recipe = ({ recipe }) => {
             ))}
           </ul>
           </div>
-          <div className="card-actions mt-auto">
-            <p className="flex items-center gap-1">
+          <div className="card-actions justify-between mt-auto">
+            <div className="flex items-center gap-1">
               <Rating style={{ maxWidth: 100 }} value={ratings} readOnly />
               <span>{ratings}</span>
-            </p>
+            </div>
             <button className="text-3xl text-red-500">
               {Favorite ? (
                 <MdOutlineFavorite></MdOutlineFavorite>

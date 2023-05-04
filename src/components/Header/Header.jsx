@@ -7,7 +7,6 @@ const Header = () => {
   const { user, logOutUser } = useContext(AuthContext);
 
   const displayName = user?.displayName;
-  const userPhoto = user?.photoURL;
   const [isOpen, setOpen] = useState(false);
 
   const handleLogout = () => {
@@ -67,11 +66,16 @@ const Header = () => {
             </NavLink>
           </li>
           <li className="px-3 py-3">
+            <NavLink to="/about" className="text-xl text-white font-medium">
+              About
+            </NavLink>
+          </li>
+          <li className="px-3 py-3">
             <NavLink to="/blog" className="text-xl text-white font-medium">
               Blog
             </NavLink>
           </li>
-          {user?.photoURL && (
+          {user && (
             <li className="hidden md:block">
              <Link to="/my-account">
              {user?.photoURL ? (

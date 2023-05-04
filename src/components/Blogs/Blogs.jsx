@@ -6,7 +6,7 @@ import { FaFileDownload } from "react-icons/fa";
 const Blogs = () => {
   const ref = React.createRef();
   return (
-    <div className="my-12 md:my-20">
+    <div className="thingIntro-BG bg-contain pt-32 bg-top bg-no-repeat">
       <Pdf targetRef={ref} filename="code-example.pdf">
         {({ toPdf }) => (
           <div className="text-center">
@@ -19,8 +19,8 @@ const Blogs = () => {
           </div>
         )}
       </Pdf>
-      <div className=" container mt-6 px-6" ref={ref}>
-        <h1 className=" mb-5 text-3xl font-semibold">
+      <div className=" container backdrop-blur-sm mt-12 px-6" ref={ref}>
+        <h1 className=" text-center mb-8 text-3xl font-semibold">
           Question & Answer
         </h1>
         <div className="space-y-4 divide-y-2">
