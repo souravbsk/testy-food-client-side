@@ -22,35 +22,34 @@ const Categories = () => {
       </div>
       <div>
         <Swiper
-           // install Swiper modules
+          // install Swiper modules
 
-           autoplay={{
+          autoplay={{
             delay: 1500,
             disableOnInteraction: false,
           }}
-           modules={[Navigation,Pagination,Autoplay]}
-           loop={true}
-           pagination={{
+          modules={[Navigation, Pagination, Autoplay]}
+          loop={true}
+          pagination={{
             clickable: true,
           }}
-           breakpoints={{
-             0:{
-               slidesPerView: 1,
-               spaceBetween:10,
-             },
-             480:{
-               slidesPerView:2,
-               spaceBetween:20
-             },
-             760:{
-               slidesPerView:3,
-               spaceBetween:30
-             }
- 
-           }}
-           onSwiper={(swiper) => console.log(swiper)}
-           // onSlideChange={ () => console.log("swiper")}
-           
+
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            760: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+          onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={ () => console.log("swiper")}
         >
           {categories.map((category) => (
             <SwiperSlide key={category.id}>
