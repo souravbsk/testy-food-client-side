@@ -6,7 +6,7 @@ import { MdOutlineFavoriteBorder, MdOutlineFavorite } from "react-icons/md";
 import { toast } from "react-hot-toast";
 import LazyLoad from "react-lazy-load";
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe,hadnleFavourite }) => {
   const { recipeName, image, recipeId, ratings, cookingMethod, ingredients } =
     recipe;
   const [Favorite, setFavorite] = useState(false);
@@ -14,6 +14,7 @@ const Recipe = ({ recipe }) => {
   const handleFavorite = () => {
     toast.success(recipeName + " add to favourite");
     setFavorite(true);
+    hadnleFavourite(recipeId);
   };
 
   return (

@@ -2,6 +2,7 @@ import React from "react";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import Recipe from "../Recipe/Recipe";
 import {AiFillLike} from "react-icons/ai"
+import { addToFavorite } from "../../Utitlies/fakeDb";
 
 const ChefDetails = () => {
   const chef = useLoaderData();
@@ -19,6 +20,17 @@ const ChefDetails = () => {
 const handleGoBack = () => {
   navigate(-1)
 }
+
+
+const hadnleFavourite = (recipeId) => {
+  console.log(chefId,recipeId);
+
+  console.log(newObject);
+  addToFavorite();
+}
+
+
+
   return (
     <div className="container">
       <div className="card mt-8 md:mt-12 border thingIntro-BG md:items-center bg-no-repeat bg-top bg-contain gap-8 flex-col md:flex-row card-side p-5 md:p-10 bg-base-100 shadow-xl">
@@ -57,7 +69,7 @@ const handleGoBack = () => {
           Recipe Length: {recipes.length}
         </h3>
         <div className="grid md:grid-cols-3 gap-8 mt-8">
-            {recipes?.map(recipe => <Recipe key={recipe?.recipeId} recipe={recipe}></Recipe>)}
+            {recipes?.map(recipe => <Recipe hadnleFavourite={hadnleFavourite} key={recipe?.recipeId} recipe={recipe}></Recipe>)}
             </div>
             <div className="mt-14 text-center">
               <button onClick={handleGoBack} className="btn">Go to Back</button>

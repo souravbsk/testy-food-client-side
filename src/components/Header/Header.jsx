@@ -1,25 +1,18 @@
 import React, { useContext, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import Hamburger from "hamburger-react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast } from "react-hot-toast";
 const Header = () => {
   const { user, logOutUser } = useContext(AuthContext);
-
   const displayName = user?.displayName;
   const [isOpen, setOpen] = useState(false);
-
-  const handleLogout = () => {
-    toast.success("log out success");
+const navigate  = useNavigate();
+  const handleLogout = ()  => {
+    toast.success("log out success")
     navigate("/login")
     logOutUser()
-      .then(() => {
-       
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
-  };
+}
 
   return (
     <div className="bg-gray-900  right-0 left-0 top-0">
@@ -98,9 +91,7 @@ const Header = () => {
 
           <li className="px-3 py-3">
             {user ? (
-              <button className="btn primary-btn" onClick={handleLogout}>
-                Logout
-              </button>
+             <button onClick={handleLogout} className="btn primary-btn">Log Out</button>
             ) : (
               <NavLink to="/login" className="text-xl text-white font-medium">
                 <button>Login</button>
